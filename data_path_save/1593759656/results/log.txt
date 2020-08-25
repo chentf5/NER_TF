@@ -1,0 +1,145 @@
+2020-07-03 15:00:56,814:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1521112368', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='train', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2020-07-03 15:00:56,814:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-07-03 15:00:56,814:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-07-03 15:00:56,824:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-07-03 15:00:56,824:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-07-03 15:00:56,855:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-07-03 15:00:56,855:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-07-03 15:00:56,869:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2020-07-03 15:00:56,869:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2020-07-03 15:00:56,869:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2020-07-03 15:00:56,869:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2020-07-03 15:00:56,870:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-07-03 15:00:56,870:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-07-03 15:00:56,938:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:00:56,938:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:00:56,944:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:00:56,944:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:00:56,972:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x14c0fc910>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x14c0fc910>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:00:56,972:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x14c0fc910>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x14c0fc910>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:00:56,983:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-07-03 15:00:56,983:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-07-03 15:00:57,076:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x15b33f690>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x15b33f690>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:00:57,076:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x15b33f690>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x15b33f690>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:00:57,112:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-07-03 15:00:57,112:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-07-03 15:00:57,280:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2020-07-03 15:00:57,280:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2020-07-03 15:00:57,283:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2020-07-03 15:00:57,283:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2020-07-03 15:00:58,261:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-07-03 15:00:58,261:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-07-03 15:00:58,263:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:154: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2020-07-03 15:00:58,263:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:154: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2020-07-03 15:00:58,553:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:144: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2020-07-03 15:00:58,553:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:144: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2020-07-03 15:00:58,554:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:145: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2020-07-03 15:00:58,554:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:145: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2020-07-03 15:01:00,221:INFO: 2020-07-03 15:00:58 epoch 1, step 1, loss: 95.53, global_step: 1
+2020-07-03 15:01:00,221:INFO: 2020-07-03 15:00:58 epoch 1, step 1, loss: 95.53, global_step: 1
+2020-07-03 15:04:37,539:INFO: 2020-07-03 15:00:58 epoch 1, step 300, loss: 6.849, global_step: 300
+2020-07-03 15:04:37,539:INFO: 2020-07-03 15:00:58 epoch 1, step 300, loss: 6.849, global_step: 300
+2020-07-03 15:07:59,234:INFO: 2020-07-03 15:00:58 epoch 1, step 600, loss: 3.159, global_step: 600
+2020-07-03 15:07:59,234:INFO: 2020-07-03 15:00:58 epoch 1, step 600, loss: 3.159, global_step: 600
+2020-07-03 15:10:25,063:INFO: 2020-07-03 15:00:58 epoch 1, step 792, loss: 5.086, global_step: 792
+2020-07-03 15:10:25,063:INFO: 2020-07-03 15:00:58 epoch 1, step 792, loss: 5.086, global_step: 792
+2020-07-03 15:10:25,558:INFO: ===========validation / test===========
+2020-07-03 15:10:25,558:INFO: ===========validation / test===========
+2020-07-03 15:10:43,714:INFO: processed 177232 tokens with 6192 phrases; found: 5586 phrases; correct: 3762.
+2020-07-03 15:10:43,714:INFO: processed 177232 tokens with 6192 phrases; found: 5586 phrases; correct: 3762.
+2020-07-03 15:10:43,715:INFO: accuracy:  96.34%; precision:  67.35%; recall:  60.76%; FB1:  63.88
+2020-07-03 15:10:43,715:INFO: accuracy:  96.34%; precision:  67.35%; recall:  60.76%; FB1:  63.88
+2020-07-03 15:10:43,715:INFO: LOC: precision:  71.95%; recall:  68.65%; FB1:  70.26  2745
+2020-07-03 15:10:43,715:INFO: LOC: precision:  71.95%; recall:  68.65%; FB1:  70.26  2745
+2020-07-03 15:10:43,715:INFO: ORG: precision:  51.84%; recall:  49.66%; FB1:  50.73  1275
+2020-07-03 15:10:43,715:INFO: ORG: precision:  51.84%; recall:  49.66%; FB1:  50.73  1275
+2020-07-03 15:10:43,715:INFO: PER: precision:  71.90%; recall:  56.75%; FB1:  63.44  1566
+2020-07-03 15:10:43,715:INFO: PER: precision:  71.90%; recall:  56.75%; FB1:  63.44  1566
+2020-07-03 15:10:44,477:INFO: 2020-07-03 15:10:43 epoch 2, step 1, loss: 4.683, global_step: 793
+2020-07-03 15:10:44,477:INFO: 2020-07-03 15:10:43 epoch 2, step 1, loss: 4.683, global_step: 793
+2020-07-03 15:14:10,708:INFO: 2020-07-03 15:10:43 epoch 2, step 300, loss: 2.794, global_step: 1092
+2020-07-03 15:14:10,708:INFO: 2020-07-03 15:10:43 epoch 2, step 300, loss: 2.794, global_step: 1092
+2020-07-03 15:17:49,848:INFO: 2020-07-03 15:10:43 epoch 2, step 600, loss: 2.855, global_step: 1392
+2020-07-03 15:17:49,848:INFO: 2020-07-03 15:10:43 epoch 2, step 600, loss: 2.855, global_step: 1392
+2020-07-03 15:20:04,471:INFO: 2020-07-03 15:10:43 epoch 2, step 792, loss: 3.6, global_step: 1584
+2020-07-03 15:20:04,471:INFO: 2020-07-03 15:10:43 epoch 2, step 792, loss: 3.6, global_step: 1584
+2020-07-03 15:20:04,971:INFO: ===========validation / test===========
+2020-07-03 15:20:04,971:INFO: ===========validation / test===========
+2020-07-03 15:20:23,749:INFO: processed 177232 tokens with 6192 phrases; found: 5509 phrases; correct: 4367.
+2020-07-03 15:20:23,749:INFO: processed 177232 tokens with 6192 phrases; found: 5509 phrases; correct: 4367.
+2020-07-03 15:20:23,749:INFO: accuracy:  97.21%; precision:  79.27%; recall:  70.53%; FB1:  74.64
+2020-07-03 15:20:23,749:INFO: accuracy:  97.21%; precision:  79.27%; recall:  70.53%; FB1:  74.64
+2020-07-03 15:20:23,750:INFO: LOC: precision:  82.75%; recall:  76.71%; FB1:  79.62  2667
+2020-07-03 15:20:23,750:INFO: LOC: precision:  82.75%; recall:  76.71%; FB1:  79.62  2667
+2020-07-03 15:20:23,750:INFO: ORG: precision:  71.57%; recall:  63.56%; FB1:  67.33  1182
+2020-07-03 15:20:23,750:INFO: ORG: precision:  71.57%; recall:  63.56%; FB1:  67.33  1182
+2020-07-03 15:20:23,750:INFO: PER: precision:  79.16%; recall:  66.23%; FB1:  72.12  1660
+2020-07-03 15:20:23,750:INFO: PER: precision:  79.16%; recall:  66.23%; FB1:  72.12  1660
+2020-07-03 15:20:24,559:INFO: 2020-07-03 15:20:23 epoch 3, step 1, loss: 2.393, global_step: 1585
+2020-07-03 15:20:24,559:INFO: 2020-07-03 15:20:23 epoch 3, step 1, loss: 2.393, global_step: 1585
+2020-07-03 15:23:44,557:INFO: 2020-07-03 15:20:23 epoch 3, step 300, loss: 2.549, global_step: 1884
+2020-07-03 15:23:44,557:INFO: 2020-07-03 15:20:23 epoch 3, step 300, loss: 2.549, global_step: 1884
+2020-07-03 15:27:22,002:INFO: 2020-07-03 15:20:23 epoch 3, step 600, loss: 2.189, global_step: 2184
+2020-07-03 15:27:22,002:INFO: 2020-07-03 15:20:23 epoch 3, step 600, loss: 2.189, global_step: 2184
+2020-07-03 15:29:42,349:INFO: 2020-07-03 15:20:23 epoch 3, step 792, loss: 1.885, global_step: 2376
+2020-07-03 15:29:42,349:INFO: 2020-07-03 15:20:23 epoch 3, step 792, loss: 1.885, global_step: 2376
+2020-07-03 15:29:42,818:INFO: ===========validation / test===========
+2020-07-03 15:29:42,818:INFO: ===========validation / test===========
+2020-07-03 15:30:01,596:INFO: processed 177232 tokens with 6192 phrases; found: 5487 phrases; correct: 4517.
+2020-07-03 15:30:01,596:INFO: processed 177232 tokens with 6192 phrases; found: 5487 phrases; correct: 4517.
+2020-07-03 15:30:01,596:INFO: accuracy:  97.45%; precision:  82.32%; recall:  72.95%; FB1:  77.35
+2020-07-03 15:30:01,596:INFO: accuracy:  97.45%; precision:  82.32%; recall:  72.95%; FB1:  77.35
+2020-07-03 15:30:01,597:INFO: LOC: precision:  86.77%; recall:  78.66%; FB1:  82.52  2608
+2020-07-03 15:30:01,597:INFO: LOC: precision:  86.77%; recall:  78.66%; FB1:  82.52  2608
+2020-07-03 15:30:01,597:INFO: ORG: precision:  77.29%; recall:  71.07%; FB1:  74.05  1224
+2020-07-03 15:30:01,597:INFO: ORG: precision:  77.29%; recall:  71.07%; FB1:  74.05  1224
+2020-07-03 15:30:01,597:INFO: PER: precision:  79.03%; recall:  65.93%; FB1:  71.89  1655
+2020-07-03 15:30:01,597:INFO: PER: precision:  79.03%; recall:  65.93%; FB1:  71.89  1655
+2020-07-03 15:30:02,398:INFO: 2020-07-03 15:30:01 epoch 4, step 1, loss: 1.566, global_step: 2377
+2020-07-03 15:30:02,398:INFO: 2020-07-03 15:30:01 epoch 4, step 1, loss: 1.566, global_step: 2377

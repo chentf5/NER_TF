@@ -1,0 +1,669 @@
+2020-07-03 15:39:15,920:INFO: Namespace(CRF=True, batch_size=2, clip=5.0, demo_model='1521112368', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='train', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2020-07-03 15:39:15,921:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-07-03 15:39:15,921:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-07-03 15:39:15,933:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-07-03 15:39:15,933:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-07-03 15:39:15,974:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-07-03 15:39:15,974:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-07-03 15:39:15,983:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2020-07-03 15:39:15,983:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2020-07-03 15:39:15,984:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2020-07-03 15:39:15,984:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2020-07-03 15:39:15,984:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-07-03 15:39:15,984:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-07-03 15:39:16,055:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:39:16,055:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:39:16,061:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:39:16,061:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-07-03 15:39:16,087:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1473a29d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1473a29d0>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:39:16,087:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1473a29d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1473a29d0>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:39:16,098:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-07-03 15:39:16,098:WARNING: From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-07-03 15:39:16,191:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1565df750>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1565df750>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:39:16,191:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1565df750>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1565df750>>: AttributeError: module 'gast' has no attribute 'Num'
+2020-07-03 15:39:16,226:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-07-03 15:39:16,226:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-07-03 15:39:16,407:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2020-07-03 15:39:16,407:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2020-07-03 15:39:16,410:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2020-07-03 15:39:16,410:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2020-07-03 15:39:17,491:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-07-03 15:39:17,491:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-07-03 15:39:17,491:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:154: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2020-07-03 15:39:17,491:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:154: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2020-07-03 15:39:17,794:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:144: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2020-07-03 15:39:17,794:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:144: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2020-07-03 15:39:17,795:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:145: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2020-07-03 15:39:17,795:WARNING: From /Users/bytedance/Desktop/zh-NER-TF-master/model.py:145: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2020-07-03 15:39:19,159:INFO: 2020-07-03 15:39:18 epoch 1, step 1, loss: 36.69, global_step: 1
+2020-07-03 15:39:19,159:INFO: 2020-07-03 15:39:18 epoch 1, step 1, loss: 36.69, global_step: 1
+2020-07-03 15:39:58,835:INFO: 2020-07-03 15:39:18 epoch 1, step 300, loss: 2.184, global_step: 300
+2020-07-03 15:39:58,835:INFO: 2020-07-03 15:39:18 epoch 1, step 300, loss: 2.184, global_step: 300
+2020-07-03 15:40:33,817:INFO: 2020-07-03 15:39:18 epoch 1, step 600, loss: 8.272, global_step: 600
+2020-07-03 15:40:33,817:INFO: 2020-07-03 15:39:18 epoch 1, step 600, loss: 8.272, global_step: 600
+2020-07-03 15:41:06,496:INFO: 2020-07-03 15:39:18 epoch 1, step 900, loss: 3.985, global_step: 900
+2020-07-03 15:41:06,496:INFO: 2020-07-03 15:39:18 epoch 1, step 900, loss: 3.985, global_step: 900
+2020-07-03 15:41:42,733:INFO: 2020-07-03 15:39:18 epoch 1, step 1200, loss: 14.79, global_step: 1200
+2020-07-03 15:41:42,733:INFO: 2020-07-03 15:39:18 epoch 1, step 1200, loss: 14.79, global_step: 1200
+2020-07-03 15:42:18,650:INFO: 2020-07-03 15:39:18 epoch 1, step 1500, loss: 0.7713, global_step: 1500
+2020-07-03 15:42:18,650:INFO: 2020-07-03 15:39:18 epoch 1, step 1500, loss: 0.7713, global_step: 1500
+2020-07-03 15:42:55,523:INFO: 2020-07-03 15:39:18 epoch 1, step 1800, loss: 2.84, global_step: 1800
+2020-07-03 15:42:55,523:INFO: 2020-07-03 15:39:18 epoch 1, step 1800, loss: 2.84, global_step: 1800
+2020-07-03 15:43:32,699:INFO: 2020-07-03 15:39:18 epoch 1, step 2100, loss: 2.251, global_step: 2100
+2020-07-03 15:43:32,699:INFO: 2020-07-03 15:39:18 epoch 1, step 2100, loss: 2.251, global_step: 2100
+2020-07-03 15:44:09,871:INFO: 2020-07-03 15:39:18 epoch 1, step 2400, loss: 2.296, global_step: 2400
+2020-07-03 15:44:09,871:INFO: 2020-07-03 15:39:18 epoch 1, step 2400, loss: 2.296, global_step: 2400
+2020-07-03 15:44:47,879:INFO: 2020-07-03 15:39:18 epoch 1, step 2700, loss: 2.805, global_step: 2700
+2020-07-03 15:44:47,879:INFO: 2020-07-03 15:39:18 epoch 1, step 2700, loss: 2.805, global_step: 2700
+2020-07-03 15:45:26,498:INFO: 2020-07-03 15:39:18 epoch 1, step 3000, loss: 2.277, global_step: 3000
+2020-07-03 15:45:26,498:INFO: 2020-07-03 15:39:18 epoch 1, step 3000, loss: 2.277, global_step: 3000
+2020-07-03 15:46:04,964:INFO: 2020-07-03 15:39:18 epoch 1, step 3300, loss: 1.221, global_step: 3300
+2020-07-03 15:46:04,964:INFO: 2020-07-03 15:39:18 epoch 1, step 3300, loss: 1.221, global_step: 3300
+2020-07-03 15:46:42,544:INFO: 2020-07-03 15:39:18 epoch 1, step 3600, loss: 0.2824, global_step: 3600
+2020-07-03 15:46:42,544:INFO: 2020-07-03 15:39:18 epoch 1, step 3600, loss: 0.2824, global_step: 3600
+2020-07-03 15:47:20,773:INFO: 2020-07-03 15:39:18 epoch 1, step 3900, loss: 4.109, global_step: 3900
+2020-07-03 15:47:20,773:INFO: 2020-07-03 15:39:18 epoch 1, step 3900, loss: 4.109, global_step: 3900
+2020-07-03 15:47:56,178:INFO: 2020-07-03 15:39:18 epoch 1, step 4200, loss: 5.307, global_step: 4200
+2020-07-03 15:47:56,178:INFO: 2020-07-03 15:39:18 epoch 1, step 4200, loss: 5.307, global_step: 4200
+2020-07-03 15:48:34,491:INFO: 2020-07-03 15:39:18 epoch 1, step 4500, loss: 1.958, global_step: 4500
+2020-07-03 15:48:34,491:INFO: 2020-07-03 15:39:18 epoch 1, step 4500, loss: 1.958, global_step: 4500
+2020-07-03 15:49:14,007:INFO: 2020-07-03 15:39:18 epoch 1, step 4800, loss: 7.846, global_step: 4800
+2020-07-03 15:49:14,007:INFO: 2020-07-03 15:39:18 epoch 1, step 4800, loss: 7.846, global_step: 4800
+2020-07-03 15:49:52,225:INFO: 2020-07-03 15:39:18 epoch 1, step 5100, loss: 0.3437, global_step: 5100
+2020-07-03 15:49:52,225:INFO: 2020-07-03 15:39:18 epoch 1, step 5100, loss: 0.3437, global_step: 5100
+2020-07-03 15:50:29,537:INFO: 2020-07-03 15:39:18 epoch 1, step 5400, loss: 1.263, global_step: 5400
+2020-07-03 15:50:29,537:INFO: 2020-07-03 15:39:18 epoch 1, step 5400, loss: 1.263, global_step: 5400
+2020-07-03 15:51:07,002:INFO: 2020-07-03 15:39:18 epoch 1, step 5700, loss: 0.1311, global_step: 5700
+2020-07-03 15:51:07,002:INFO: 2020-07-03 15:39:18 epoch 1, step 5700, loss: 0.1311, global_step: 5700
+2020-07-03 15:51:43,774:INFO: 2020-07-03 15:39:18 epoch 1, step 6000, loss: 1.244, global_step: 6000
+2020-07-03 15:51:43,774:INFO: 2020-07-03 15:39:18 epoch 1, step 6000, loss: 1.244, global_step: 6000
+2020-07-03 15:52:19,907:INFO: 2020-07-03 15:39:18 epoch 1, step 6300, loss: 0.1086, global_step: 6300
+2020-07-03 15:52:19,907:INFO: 2020-07-03 15:39:18 epoch 1, step 6300, loss: 0.1086, global_step: 6300
+2020-07-03 15:52:59,203:INFO: 2020-07-03 15:39:18 epoch 1, step 6600, loss: 0.184, global_step: 6600
+2020-07-03 15:52:59,203:INFO: 2020-07-03 15:39:18 epoch 1, step 6600, loss: 0.184, global_step: 6600
+2020-07-03 15:53:41,124:INFO: 2020-07-03 15:39:18 epoch 1, step 6900, loss: 1.249, global_step: 6900
+2020-07-03 15:53:41,124:INFO: 2020-07-03 15:39:18 epoch 1, step 6900, loss: 1.249, global_step: 6900
+2020-07-03 15:54:19,585:INFO: 2020-07-03 15:39:18 epoch 1, step 7200, loss: 2.541, global_step: 7200
+2020-07-03 15:54:19,585:INFO: 2020-07-03 15:39:18 epoch 1, step 7200, loss: 2.541, global_step: 7200
+2020-07-03 15:54:58,154:INFO: 2020-07-03 15:39:18 epoch 1, step 7500, loss: 1.524, global_step: 7500
+2020-07-03 15:54:58,154:INFO: 2020-07-03 15:39:18 epoch 1, step 7500, loss: 1.524, global_step: 7500
+2020-07-03 15:55:33,218:INFO: 2020-07-03 15:39:18 epoch 1, step 7800, loss: 5.218, global_step: 7800
+2020-07-03 15:55:33,218:INFO: 2020-07-03 15:39:18 epoch 1, step 7800, loss: 5.218, global_step: 7800
+2020-07-03 15:56:09,940:INFO: 2020-07-03 15:39:18 epoch 1, step 8100, loss: 3.17, global_step: 8100
+2020-07-03 15:56:09,940:INFO: 2020-07-03 15:39:18 epoch 1, step 8100, loss: 3.17, global_step: 8100
+2020-07-03 15:56:50,179:INFO: 2020-07-03 15:39:18 epoch 1, step 8400, loss: 0.8206, global_step: 8400
+2020-07-03 15:56:50,179:INFO: 2020-07-03 15:39:18 epoch 1, step 8400, loss: 0.8206, global_step: 8400
+2020-07-03 15:57:28,230:INFO: 2020-07-03 15:39:18 epoch 1, step 8700, loss: 0.04023, global_step: 8700
+2020-07-03 15:57:28,230:INFO: 2020-07-03 15:39:18 epoch 1, step 8700, loss: 0.04023, global_step: 8700
+2020-07-03 15:58:04,487:INFO: 2020-07-03 15:39:18 epoch 1, step 9000, loss: 0.06721, global_step: 9000
+2020-07-03 15:58:04,487:INFO: 2020-07-03 15:39:18 epoch 1, step 9000, loss: 0.06721, global_step: 9000
+2020-07-03 15:58:39,665:INFO: 2020-07-03 15:39:18 epoch 1, step 9300, loss: 1.292, global_step: 9300
+2020-07-03 15:58:39,665:INFO: 2020-07-03 15:39:18 epoch 1, step 9300, loss: 1.292, global_step: 9300
+2020-07-03 15:59:17,454:INFO: 2020-07-03 15:39:18 epoch 1, step 9600, loss: 5.426, global_step: 9600
+2020-07-03 15:59:17,454:INFO: 2020-07-03 15:39:18 epoch 1, step 9600, loss: 5.426, global_step: 9600
+2020-07-03 15:59:53,696:INFO: 2020-07-03 15:39:18 epoch 1, step 9900, loss: 0.3288, global_step: 9900
+2020-07-03 15:59:53,696:INFO: 2020-07-03 15:39:18 epoch 1, step 9900, loss: 0.3288, global_step: 9900
+2020-07-03 16:00:30,062:INFO: 2020-07-03 15:39:18 epoch 1, step 10200, loss: 0.0943, global_step: 10200
+2020-07-03 16:00:30,062:INFO: 2020-07-03 15:39:18 epoch 1, step 10200, loss: 0.0943, global_step: 10200
+2020-07-03 16:01:05,687:INFO: 2020-07-03 15:39:18 epoch 1, step 10500, loss: 0.4411, global_step: 10500
+2020-07-03 16:01:05,687:INFO: 2020-07-03 15:39:18 epoch 1, step 10500, loss: 0.4411, global_step: 10500
+2020-07-03 16:01:42,453:INFO: 2020-07-03 15:39:18 epoch 1, step 10800, loss: 0.7031, global_step: 10800
+2020-07-03 16:01:42,453:INFO: 2020-07-03 15:39:18 epoch 1, step 10800, loss: 0.7031, global_step: 10800
+2020-07-03 16:02:17,752:INFO: 2020-07-03 15:39:18 epoch 1, step 11100, loss: 3.224, global_step: 11100
+2020-07-03 16:02:17,752:INFO: 2020-07-03 15:39:18 epoch 1, step 11100, loss: 3.224, global_step: 11100
+2020-07-03 16:02:55,324:INFO: 2020-07-03 15:39:18 epoch 1, step 11400, loss: 1.049, global_step: 11400
+2020-07-03 16:02:55,324:INFO: 2020-07-03 15:39:18 epoch 1, step 11400, loss: 1.049, global_step: 11400
+2020-07-03 16:03:33,759:INFO: 2020-07-03 15:39:18 epoch 1, step 11700, loss: 0.148, global_step: 11700
+2020-07-03 16:03:33,759:INFO: 2020-07-03 15:39:18 epoch 1, step 11700, loss: 0.148, global_step: 11700
+2020-07-03 16:04:08,217:INFO: 2020-07-03 15:39:18 epoch 1, step 12000, loss: 0.09546, global_step: 12000
+2020-07-03 16:04:08,217:INFO: 2020-07-03 15:39:18 epoch 1, step 12000, loss: 0.09546, global_step: 12000
+2020-07-03 16:04:45,445:INFO: 2020-07-03 15:39:18 epoch 1, step 12300, loss: 4.926, global_step: 12300
+2020-07-03 16:04:45,445:INFO: 2020-07-03 15:39:18 epoch 1, step 12300, loss: 4.926, global_step: 12300
+2020-07-03 16:05:23,350:INFO: 2020-07-03 15:39:18 epoch 1, step 12600, loss: 4.639, global_step: 12600
+2020-07-03 16:05:23,350:INFO: 2020-07-03 15:39:18 epoch 1, step 12600, loss: 4.639, global_step: 12600
+2020-07-03 16:05:59,530:INFO: 2020-07-03 15:39:18 epoch 1, step 12900, loss: 1.064, global_step: 12900
+2020-07-03 16:05:59,530:INFO: 2020-07-03 15:39:18 epoch 1, step 12900, loss: 1.064, global_step: 12900
+2020-07-03 16:06:35,059:INFO: 2020-07-03 15:39:18 epoch 1, step 13200, loss: 0.8826, global_step: 13200
+2020-07-03 16:06:35,059:INFO: 2020-07-03 15:39:18 epoch 1, step 13200, loss: 0.8826, global_step: 13200
+2020-07-03 16:07:11,028:INFO: 2020-07-03 15:39:18 epoch 1, step 13500, loss: 1.561, global_step: 13500
+2020-07-03 16:07:11,028:INFO: 2020-07-03 15:39:18 epoch 1, step 13500, loss: 1.561, global_step: 13500
+2020-07-03 16:07:46,431:INFO: 2020-07-03 15:39:18 epoch 1, step 13800, loss: 1.186, global_step: 13800
+2020-07-03 16:07:46,431:INFO: 2020-07-03 15:39:18 epoch 1, step 13800, loss: 1.186, global_step: 13800
+2020-07-03 16:08:22,463:INFO: 2020-07-03 15:39:18 epoch 1, step 14100, loss: 0.08607, global_step: 14100
+2020-07-03 16:08:22,463:INFO: 2020-07-03 15:39:18 epoch 1, step 14100, loss: 0.08607, global_step: 14100
+2020-07-03 16:08:59,300:INFO: 2020-07-03 15:39:18 epoch 1, step 14400, loss: 3.494, global_step: 14400
+2020-07-03 16:08:59,300:INFO: 2020-07-03 15:39:18 epoch 1, step 14400, loss: 3.494, global_step: 14400
+2020-07-03 16:09:38,091:INFO: 2020-07-03 15:39:18 epoch 1, step 14700, loss: 0.1527, global_step: 14700
+2020-07-03 16:09:38,091:INFO: 2020-07-03 15:39:18 epoch 1, step 14700, loss: 0.1527, global_step: 14700
+2020-07-03 16:10:11,570:INFO: 2020-07-03 15:39:18 epoch 1, step 15000, loss: 0.02599, global_step: 15000
+2020-07-03 16:10:11,570:INFO: 2020-07-03 15:39:18 epoch 1, step 15000, loss: 0.02599, global_step: 15000
+2020-07-03 16:10:45,750:INFO: 2020-07-03 15:39:18 epoch 1, step 15300, loss: 1.692, global_step: 15300
+2020-07-03 16:10:45,750:INFO: 2020-07-03 15:39:18 epoch 1, step 15300, loss: 1.692, global_step: 15300
+2020-07-03 16:11:20,816:INFO: 2020-07-03 15:39:18 epoch 1, step 15600, loss: 0.2012, global_step: 15600
+2020-07-03 16:11:20,816:INFO: 2020-07-03 15:39:18 epoch 1, step 15600, loss: 0.2012, global_step: 15600
+2020-07-03 16:11:54,005:INFO: 2020-07-03 15:39:18 epoch 1, step 15900, loss: 0.04196, global_step: 15900
+2020-07-03 16:11:54,005:INFO: 2020-07-03 15:39:18 epoch 1, step 15900, loss: 0.04196, global_step: 15900
+2020-07-03 16:12:29,052:INFO: 2020-07-03 15:39:18 epoch 1, step 16200, loss: 0.08171, global_step: 16200
+2020-07-03 16:12:29,052:INFO: 2020-07-03 15:39:18 epoch 1, step 16200, loss: 0.08171, global_step: 16200
+2020-07-03 16:13:05,892:INFO: 2020-07-03 15:39:18 epoch 1, step 16500, loss: 1.002, global_step: 16500
+2020-07-03 16:13:05,892:INFO: 2020-07-03 15:39:18 epoch 1, step 16500, loss: 1.002, global_step: 16500
+2020-07-03 16:13:41,742:INFO: 2020-07-03 15:39:18 epoch 1, step 16800, loss: 0.3239, global_step: 16800
+2020-07-03 16:13:41,742:INFO: 2020-07-03 15:39:18 epoch 1, step 16800, loss: 0.3239, global_step: 16800
+2020-07-03 16:14:17,237:INFO: 2020-07-03 15:39:18 epoch 1, step 17100, loss: 0.02032, global_step: 17100
+2020-07-03 16:14:17,237:INFO: 2020-07-03 15:39:18 epoch 1, step 17100, loss: 0.02032, global_step: 17100
+2020-07-03 16:14:53,380:INFO: 2020-07-03 15:39:18 epoch 1, step 17400, loss: 2.278, global_step: 17400
+2020-07-03 16:14:53,380:INFO: 2020-07-03 15:39:18 epoch 1, step 17400, loss: 2.278, global_step: 17400
+2020-07-03 16:15:29,186:INFO: 2020-07-03 15:39:18 epoch 1, step 17700, loss: 1.064, global_step: 17700
+2020-07-03 16:15:29,186:INFO: 2020-07-03 15:39:18 epoch 1, step 17700, loss: 1.064, global_step: 17700
+2020-07-03 16:16:06,119:INFO: 2020-07-03 15:39:18 epoch 1, step 18000, loss: 0.3783, global_step: 18000
+2020-07-03 16:16:06,119:INFO: 2020-07-03 15:39:18 epoch 1, step 18000, loss: 0.3783, global_step: 18000
+2020-07-03 16:16:43,082:INFO: 2020-07-03 15:39:18 epoch 1, step 18300, loss: 0.1003, global_step: 18300
+2020-07-03 16:16:43,082:INFO: 2020-07-03 15:39:18 epoch 1, step 18300, loss: 0.1003, global_step: 18300
+2020-07-03 16:17:17,843:INFO: 2020-07-03 15:39:18 epoch 1, step 18600, loss: 0.03368, global_step: 18600
+2020-07-03 16:17:17,843:INFO: 2020-07-03 15:39:18 epoch 1, step 18600, loss: 0.03368, global_step: 18600
+2020-07-03 16:17:52,555:INFO: 2020-07-03 15:39:18 epoch 1, step 18900, loss: 0.185, global_step: 18900
+2020-07-03 16:17:52,555:INFO: 2020-07-03 15:39:18 epoch 1, step 18900, loss: 0.185, global_step: 18900
+2020-07-03 16:18:28,714:INFO: 2020-07-03 15:39:18 epoch 1, step 19200, loss: 0.6564, global_step: 19200
+2020-07-03 16:18:28,714:INFO: 2020-07-03 15:39:18 epoch 1, step 19200, loss: 0.6564, global_step: 19200
+2020-07-03 16:19:05,817:INFO: 2020-07-03 15:39:18 epoch 1, step 19500, loss: 1.282, global_step: 19500
+2020-07-03 16:19:05,817:INFO: 2020-07-03 15:39:18 epoch 1, step 19500, loss: 1.282, global_step: 19500
+2020-07-03 16:19:41,005:INFO: 2020-07-03 15:39:18 epoch 1, step 19800, loss: 0.6274, global_step: 19800
+2020-07-03 16:19:41,005:INFO: 2020-07-03 15:39:18 epoch 1, step 19800, loss: 0.6274, global_step: 19800
+2020-07-03 16:20:15,719:INFO: 2020-07-03 15:39:18 epoch 1, step 20100, loss: 0.3872, global_step: 20100
+2020-07-03 16:20:15,719:INFO: 2020-07-03 15:39:18 epoch 1, step 20100, loss: 0.3872, global_step: 20100
+2020-07-03 16:20:52,396:INFO: 2020-07-03 15:39:18 epoch 1, step 20400, loss: 0.0391, global_step: 20400
+2020-07-03 16:20:52,396:INFO: 2020-07-03 15:39:18 epoch 1, step 20400, loss: 0.0391, global_step: 20400
+2020-07-03 16:21:27,254:INFO: 2020-07-03 15:39:18 epoch 1, step 20700, loss: 2.077, global_step: 20700
+2020-07-03 16:21:27,254:INFO: 2020-07-03 15:39:18 epoch 1, step 20700, loss: 2.077, global_step: 20700
+2020-07-03 16:22:01,511:INFO: 2020-07-03 15:39:18 epoch 1, step 21000, loss: 0.01163, global_step: 21000
+2020-07-03 16:22:01,511:INFO: 2020-07-03 15:39:18 epoch 1, step 21000, loss: 0.01163, global_step: 21000
+2020-07-03 16:22:33,923:INFO: 2020-07-03 15:39:18 epoch 1, step 21300, loss: 4.886, global_step: 21300
+2020-07-03 16:22:33,923:INFO: 2020-07-03 15:39:18 epoch 1, step 21300, loss: 4.886, global_step: 21300
+2020-07-03 16:23:06,807:INFO: 2020-07-03 15:39:18 epoch 1, step 21600, loss: 1.787, global_step: 21600
+2020-07-03 16:23:06,807:INFO: 2020-07-03 15:39:18 epoch 1, step 21600, loss: 1.787, global_step: 21600
+2020-07-03 16:23:39,783:INFO: 2020-07-03 15:39:18 epoch 1, step 21900, loss: 2.358, global_step: 21900
+2020-07-03 16:23:39,783:INFO: 2020-07-03 15:39:18 epoch 1, step 21900, loss: 2.358, global_step: 21900
+2020-07-03 16:24:13,279:INFO: 2020-07-03 15:39:18 epoch 1, step 22200, loss: 0.01843, global_step: 22200
+2020-07-03 16:24:13,279:INFO: 2020-07-03 15:39:18 epoch 1, step 22200, loss: 0.01843, global_step: 22200
+2020-07-03 16:24:46,113:INFO: 2020-07-03 15:39:18 epoch 1, step 22500, loss: 13.86, global_step: 22500
+2020-07-03 16:24:46,113:INFO: 2020-07-03 15:39:18 epoch 1, step 22500, loss: 13.86, global_step: 22500
+2020-07-03 16:25:19,064:INFO: 2020-07-03 15:39:18 epoch 1, step 22800, loss: 0.106, global_step: 22800
+2020-07-03 16:25:19,064:INFO: 2020-07-03 15:39:18 epoch 1, step 22800, loss: 0.106, global_step: 22800
+2020-07-03 16:25:50,971:INFO: 2020-07-03 15:39:18 epoch 1, step 23100, loss: 1.308, global_step: 23100
+2020-07-03 16:25:50,971:INFO: 2020-07-03 15:39:18 epoch 1, step 23100, loss: 1.308, global_step: 23100
+2020-07-03 16:26:22,718:INFO: 2020-07-03 15:39:18 epoch 1, step 23400, loss: 0.8942, global_step: 23400
+2020-07-03 16:26:22,718:INFO: 2020-07-03 15:39:18 epoch 1, step 23400, loss: 0.8942, global_step: 23400
+2020-07-03 16:26:54,048:INFO: 2020-07-03 15:39:18 epoch 1, step 23700, loss: 0.01148, global_step: 23700
+2020-07-03 16:26:54,048:INFO: 2020-07-03 15:39:18 epoch 1, step 23700, loss: 0.01148, global_step: 23700
+2020-07-03 16:27:26,797:INFO: 2020-07-03 15:39:18 epoch 1, step 24000, loss: 0.3168, global_step: 24000
+2020-07-03 16:27:26,797:INFO: 2020-07-03 15:39:18 epoch 1, step 24000, loss: 0.3168, global_step: 24000
+2020-07-03 16:28:00,508:INFO: 2020-07-03 15:39:18 epoch 1, step 24300, loss: 0.2517, global_step: 24300
+2020-07-03 16:28:00,508:INFO: 2020-07-03 15:39:18 epoch 1, step 24300, loss: 0.2517, global_step: 24300
+2020-07-03 16:28:32,730:INFO: 2020-07-03 15:39:18 epoch 1, step 24600, loss: 0.0508, global_step: 24600
+2020-07-03 16:28:32,730:INFO: 2020-07-03 15:39:18 epoch 1, step 24600, loss: 0.0508, global_step: 24600
+2020-07-03 16:29:05,237:INFO: 2020-07-03 15:39:18 epoch 1, step 24900, loss: 2.734, global_step: 24900
+2020-07-03 16:29:05,237:INFO: 2020-07-03 15:39:18 epoch 1, step 24900, loss: 2.734, global_step: 24900
+2020-07-03 16:29:37,444:INFO: 2020-07-03 15:39:18 epoch 1, step 25200, loss: 8.605, global_step: 25200
+2020-07-03 16:29:37,444:INFO: 2020-07-03 15:39:18 epoch 1, step 25200, loss: 8.605, global_step: 25200
+2020-07-03 16:29:52,837:INFO: 2020-07-03 15:39:18 epoch 1, step 25329, loss: 0.155, global_step: 25329
+2020-07-03 16:29:52,837:INFO: 2020-07-03 15:39:18 epoch 1, step 25329, loss: 0.155, global_step: 25329
+2020-07-03 16:29:53,569:INFO: ===========validation / test===========
+2020-07-03 16:29:53,569:INFO: ===========validation / test===========
+2020-07-03 16:30:21,038:INFO: processed 177232 tokens with 6192 phrases; found: 5656 phrases; correct: 4865.
+2020-07-03 16:30:21,038:INFO: processed 177232 tokens with 6192 phrases; found: 5656 phrases; correct: 4865.
+2020-07-03 16:30:21,038:INFO: accuracy:  97.70%; precision:  86.01%; recall:  78.57%; FB1:  82.12
+2020-07-03 16:30:21,038:INFO: accuracy:  97.70%; precision:  86.01%; recall:  78.57%; FB1:  82.12
+2020-07-03 16:30:21,038:INFO: LOC: precision:  89.89%; recall:  84.39%; FB1:  87.06  2701
+2020-07-03 16:30:21,038:INFO: LOC: precision:  89.89%; recall:  84.39%; FB1:  87.06  2701
+2020-07-03 16:30:21,038:INFO: ORG: precision:  78.68%; recall:  72.65%; FB1:  75.55  1229
+2020-07-03 16:30:21,038:INFO: ORG: precision:  78.68%; recall:  72.65%; FB1:  75.55  1229
+2020-07-03 16:30:21,038:INFO: PER: precision:  85.17%; recall:  74.09%; FB1:  79.25  1726
+2020-07-03 16:30:21,038:INFO: PER: precision:  85.17%; recall:  74.09%; FB1:  79.25  1726
+2020-07-03 16:30:21,157:INFO: 2020-07-03 16:30:21 epoch 2, step 1, loss: 0.9103, global_step: 25330
+2020-07-03 16:30:21,157:INFO: 2020-07-03 16:30:21 epoch 2, step 1, loss: 0.9103, global_step: 25330
+2020-07-03 16:30:56,100:INFO: 2020-07-03 16:30:21 epoch 2, step 300, loss: 0.01643, global_step: 25629
+2020-07-03 16:30:56,100:INFO: 2020-07-03 16:30:21 epoch 2, step 300, loss: 0.01643, global_step: 25629
+2020-07-03 16:31:29,369:INFO: 2020-07-03 16:30:21 epoch 2, step 600, loss: 0.2505, global_step: 25929
+2020-07-03 16:31:29,369:INFO: 2020-07-03 16:30:21 epoch 2, step 600, loss: 0.2505, global_step: 25929
+2020-07-03 16:32:03,062:INFO: 2020-07-03 16:30:21 epoch 2, step 900, loss: 0.1964, global_step: 26229
+2020-07-03 16:32:03,062:INFO: 2020-07-03 16:30:21 epoch 2, step 900, loss: 0.1964, global_step: 26229
+2020-07-03 16:32:36,004:INFO: 2020-07-03 16:30:21 epoch 2, step 1200, loss: 0.2376, global_step: 26529
+2020-07-03 16:32:36,004:INFO: 2020-07-03 16:30:21 epoch 2, step 1200, loss: 0.2376, global_step: 26529
+2020-07-03 16:33:12,543:INFO: 2020-07-03 16:30:21 epoch 2, step 1500, loss: 8.507, global_step: 26829
+2020-07-03 16:33:12,543:INFO: 2020-07-03 16:30:21 epoch 2, step 1500, loss: 8.507, global_step: 26829
+2020-07-03 16:33:47,529:INFO: 2020-07-03 16:30:21 epoch 2, step 1800, loss: 2.414, global_step: 27129
+2020-07-03 16:33:47,529:INFO: 2020-07-03 16:30:21 epoch 2, step 1800, loss: 2.414, global_step: 27129
+2020-07-03 16:34:24,540:INFO: 2020-07-03 16:30:21 epoch 2, step 2100, loss: 0.08829, global_step: 27429
+2020-07-03 16:34:24,540:INFO: 2020-07-03 16:30:21 epoch 2, step 2100, loss: 0.08829, global_step: 27429
+2020-07-03 16:35:01,336:INFO: 2020-07-03 16:30:21 epoch 2, step 2400, loss: 2.464, global_step: 27729
+2020-07-03 16:35:01,336:INFO: 2020-07-03 16:30:21 epoch 2, step 2400, loss: 2.464, global_step: 27729
+2020-07-03 16:35:36,019:INFO: 2020-07-03 16:30:21 epoch 2, step 2700, loss: 0.2169, global_step: 28029
+2020-07-03 16:35:36,019:INFO: 2020-07-03 16:30:21 epoch 2, step 2700, loss: 0.2169, global_step: 28029
+2020-07-03 16:36:11,434:INFO: 2020-07-03 16:30:21 epoch 2, step 3000, loss: 3.311, global_step: 28329
+2020-07-03 16:36:11,434:INFO: 2020-07-03 16:30:21 epoch 2, step 3000, loss: 3.311, global_step: 28329
+2020-07-03 16:36:48,175:INFO: 2020-07-03 16:30:21 epoch 2, step 3300, loss: 0.3267, global_step: 28629
+2020-07-03 16:36:48,175:INFO: 2020-07-03 16:30:21 epoch 2, step 3300, loss: 0.3267, global_step: 28629
+2020-07-03 16:37:26,397:INFO: 2020-07-03 16:30:21 epoch 2, step 3600, loss: 0.08787, global_step: 28929
+2020-07-03 16:37:26,397:INFO: 2020-07-03 16:30:21 epoch 2, step 3600, loss: 0.08787, global_step: 28929
+2020-07-03 16:38:03,593:INFO: 2020-07-03 16:30:21 epoch 2, step 3900, loss: 0.5068, global_step: 29229
+2020-07-03 16:38:03,593:INFO: 2020-07-03 16:30:21 epoch 2, step 3900, loss: 0.5068, global_step: 29229
+2020-07-03 16:38:39,341:INFO: 2020-07-03 16:30:21 epoch 2, step 4200, loss: 7.836, global_step: 29529
+2020-07-03 16:38:39,341:INFO: 2020-07-03 16:30:21 epoch 2, step 4200, loss: 7.836, global_step: 29529
+2020-07-03 16:39:16,194:INFO: 2020-07-03 16:30:21 epoch 2, step 4500, loss: 0.07086, global_step: 29829
+2020-07-03 16:39:16,194:INFO: 2020-07-03 16:30:21 epoch 2, step 4500, loss: 0.07086, global_step: 29829
+2020-07-03 16:39:51,835:INFO: 2020-07-03 16:30:21 epoch 2, step 4800, loss: 0.02521, global_step: 30129
+2020-07-03 16:39:51,835:INFO: 2020-07-03 16:30:21 epoch 2, step 4800, loss: 0.02521, global_step: 30129
+2020-07-03 16:40:28,054:INFO: 2020-07-03 16:30:21 epoch 2, step 5100, loss: 4.956, global_step: 30429
+2020-07-03 16:40:28,054:INFO: 2020-07-03 16:30:21 epoch 2, step 5100, loss: 4.956, global_step: 30429
+2020-07-03 16:41:03,036:INFO: 2020-07-03 16:30:21 epoch 2, step 5400, loss: 2.094, global_step: 30729
+2020-07-03 16:41:03,036:INFO: 2020-07-03 16:30:21 epoch 2, step 5400, loss: 2.094, global_step: 30729
+2020-07-03 16:41:39,745:INFO: 2020-07-03 16:30:21 epoch 2, step 5700, loss: 0.007824, global_step: 31029
+2020-07-03 16:41:39,745:INFO: 2020-07-03 16:30:21 epoch 2, step 5700, loss: 0.007824, global_step: 31029
+2020-07-03 16:42:17,841:INFO: 2020-07-03 16:30:21 epoch 2, step 6000, loss: 0.06358, global_step: 31329
+2020-07-03 16:42:17,841:INFO: 2020-07-03 16:30:21 epoch 2, step 6000, loss: 0.06358, global_step: 31329
+2020-07-03 16:42:55,111:INFO: 2020-07-03 16:30:21 epoch 2, step 6300, loss: 1.876, global_step: 31629
+2020-07-03 16:42:55,111:INFO: 2020-07-03 16:30:21 epoch 2, step 6300, loss: 1.876, global_step: 31629
+2020-07-03 16:43:31,672:INFO: 2020-07-03 16:30:21 epoch 2, step 6600, loss: 4.822, global_step: 31929
+2020-07-03 16:43:31,672:INFO: 2020-07-03 16:30:21 epoch 2, step 6600, loss: 4.822, global_step: 31929
+2020-07-03 16:44:08,727:INFO: 2020-07-03 16:30:21 epoch 2, step 6900, loss: 4.586, global_step: 32229
+2020-07-03 16:44:08,727:INFO: 2020-07-03 16:30:21 epoch 2, step 6900, loss: 4.586, global_step: 32229
+2020-07-03 16:44:43,271:INFO: 2020-07-03 16:30:21 epoch 2, step 7200, loss: 2.174, global_step: 32529
+2020-07-03 16:44:43,271:INFO: 2020-07-03 16:30:21 epoch 2, step 7200, loss: 2.174, global_step: 32529
+2020-07-03 16:45:20,088:INFO: 2020-07-03 16:30:21 epoch 2, step 7500, loss: 0.07157, global_step: 32829
+2020-07-03 16:45:20,088:INFO: 2020-07-03 16:30:21 epoch 2, step 7500, loss: 0.07157, global_step: 32829
+2020-07-03 16:45:56,910:INFO: 2020-07-03 16:30:21 epoch 2, step 7800, loss: 5.235, global_step: 33129
+2020-07-03 16:45:56,910:INFO: 2020-07-03 16:30:21 epoch 2, step 7800, loss: 5.235, global_step: 33129
+2020-07-03 16:46:32,047:INFO: 2020-07-03 16:30:21 epoch 2, step 8100, loss: 0.3394, global_step: 33429
+2020-07-03 16:46:32,047:INFO: 2020-07-03 16:30:21 epoch 2, step 8100, loss: 0.3394, global_step: 33429
+2020-07-03 16:47:08,057:INFO: 2020-07-03 16:30:21 epoch 2, step 8400, loss: 0.6346, global_step: 33729
+2020-07-03 16:47:08,057:INFO: 2020-07-03 16:30:21 epoch 2, step 8400, loss: 0.6346, global_step: 33729
+2020-07-03 16:47:42,973:INFO: 2020-07-03 16:30:21 epoch 2, step 8700, loss: 0.9874, global_step: 34029
+2020-07-03 16:47:42,973:INFO: 2020-07-03 16:30:21 epoch 2, step 8700, loss: 0.9874, global_step: 34029
+2020-07-03 16:48:17,631:INFO: 2020-07-03 16:30:21 epoch 2, step 9000, loss: 0.4219, global_step: 34329
+2020-07-03 16:48:17,631:INFO: 2020-07-03 16:30:21 epoch 2, step 9000, loss: 0.4219, global_step: 34329
+2020-07-03 16:48:51,592:INFO: 2020-07-03 16:30:21 epoch 2, step 9300, loss: 3.588, global_step: 34629
+2020-07-03 16:48:51,592:INFO: 2020-07-03 16:30:21 epoch 2, step 9300, loss: 3.588, global_step: 34629
+2020-07-03 16:49:24,729:INFO: 2020-07-03 16:30:21 epoch 2, step 9600, loss: 10.83, global_step: 34929
+2020-07-03 16:49:24,729:INFO: 2020-07-03 16:30:21 epoch 2, step 9600, loss: 10.83, global_step: 34929
+2020-07-03 16:49:58,209:INFO: 2020-07-03 16:30:21 epoch 2, step 9900, loss: 2.682, global_step: 35229
+2020-07-03 16:49:58,209:INFO: 2020-07-03 16:30:21 epoch 2, step 9900, loss: 2.682, global_step: 35229
+2020-07-03 16:50:30,732:INFO: 2020-07-03 16:30:21 epoch 2, step 10200, loss: 0.02729, global_step: 35529
+2020-07-03 16:50:30,732:INFO: 2020-07-03 16:30:21 epoch 2, step 10200, loss: 0.02729, global_step: 35529
+2020-07-03 16:51:03,857:INFO: 2020-07-03 16:30:21 epoch 2, step 10500, loss: 0.07936, global_step: 35829
+2020-07-03 16:51:03,857:INFO: 2020-07-03 16:30:21 epoch 2, step 10500, loss: 0.07936, global_step: 35829
+2020-07-03 16:51:38,492:INFO: 2020-07-03 16:30:21 epoch 2, step 10800, loss: 0.1042, global_step: 36129
+2020-07-03 16:51:38,492:INFO: 2020-07-03 16:30:21 epoch 2, step 10800, loss: 0.1042, global_step: 36129
+2020-07-03 16:52:17,016:INFO: 2020-07-03 16:30:21 epoch 2, step 11100, loss: 8.2, global_step: 36429
+2020-07-03 16:52:17,016:INFO: 2020-07-03 16:30:21 epoch 2, step 11100, loss: 8.2, global_step: 36429
+2020-07-03 16:52:52,343:INFO: 2020-07-03 16:30:21 epoch 2, step 11400, loss: 0.01747, global_step: 36729
+2020-07-03 16:52:52,343:INFO: 2020-07-03 16:30:21 epoch 2, step 11400, loss: 0.01747, global_step: 36729
+2020-07-03 16:53:27,916:INFO: 2020-07-03 16:30:21 epoch 2, step 11700, loss: 1.8, global_step: 37029
+2020-07-03 16:53:27,916:INFO: 2020-07-03 16:30:21 epoch 2, step 11700, loss: 1.8, global_step: 37029
+2020-07-03 16:54:01,780:INFO: 2020-07-03 16:30:21 epoch 2, step 12000, loss: 0.1602, global_step: 37329
+2020-07-03 16:54:01,780:INFO: 2020-07-03 16:30:21 epoch 2, step 12000, loss: 0.1602, global_step: 37329
+2020-07-03 16:54:36,127:INFO: 2020-07-03 16:30:21 epoch 2, step 12300, loss: 0.5147, global_step: 37629
+2020-07-03 16:54:36,127:INFO: 2020-07-03 16:30:21 epoch 2, step 12300, loss: 0.5147, global_step: 37629
+2020-07-03 16:55:10,839:INFO: 2020-07-03 16:30:21 epoch 2, step 12600, loss: 0.00246, global_step: 37929
+2020-07-03 16:55:10,839:INFO: 2020-07-03 16:30:21 epoch 2, step 12600, loss: 0.00246, global_step: 37929
+2020-07-03 16:55:45,043:INFO: 2020-07-03 16:30:21 epoch 2, step 12900, loss: 1.692, global_step: 38229
+2020-07-03 16:55:45,043:INFO: 2020-07-03 16:30:21 epoch 2, step 12900, loss: 1.692, global_step: 38229
+2020-07-03 16:56:18,066:INFO: 2020-07-03 16:30:21 epoch 2, step 13200, loss: 6.844, global_step: 38529
+2020-07-03 16:56:18,066:INFO: 2020-07-03 16:30:21 epoch 2, step 13200, loss: 6.844, global_step: 38529
+2020-07-03 16:56:53,472:INFO: 2020-07-03 16:30:21 epoch 2, step 13500, loss: 0.01584, global_step: 38829
+2020-07-03 16:56:53,472:INFO: 2020-07-03 16:30:21 epoch 2, step 13500, loss: 0.01584, global_step: 38829
+2020-07-03 16:57:28,612:INFO: 2020-07-03 16:30:21 epoch 2, step 13800, loss: 0.02043, global_step: 39129
+2020-07-03 16:57:28,612:INFO: 2020-07-03 16:30:21 epoch 2, step 13800, loss: 0.02043, global_step: 39129
+2020-07-03 16:58:03,137:INFO: 2020-07-03 16:30:21 epoch 2, step 14100, loss: 4.724, global_step: 39429
+2020-07-03 16:58:03,137:INFO: 2020-07-03 16:30:21 epoch 2, step 14100, loss: 4.724, global_step: 39429
+2020-07-03 16:58:39,322:INFO: 2020-07-03 16:30:21 epoch 2, step 14400, loss: 0.07888, global_step: 39729
+2020-07-03 16:58:39,322:INFO: 2020-07-03 16:30:21 epoch 2, step 14400, loss: 0.07888, global_step: 39729
+2020-07-03 16:59:13,965:INFO: 2020-07-03 16:30:21 epoch 2, step 14700, loss: 2.799, global_step: 40029
+2020-07-03 16:59:13,965:INFO: 2020-07-03 16:30:21 epoch 2, step 14700, loss: 2.799, global_step: 40029
+2020-07-03 16:59:47,998:INFO: 2020-07-03 16:30:21 epoch 2, step 15000, loss: 0.0479, global_step: 40329
+2020-07-03 16:59:47,998:INFO: 2020-07-03 16:30:21 epoch 2, step 15000, loss: 0.0479, global_step: 40329
+2020-07-03 17:00:23,265:INFO: 2020-07-03 16:30:21 epoch 2, step 15300, loss: 1.956, global_step: 40629
+2020-07-03 17:00:23,265:INFO: 2020-07-03 16:30:21 epoch 2, step 15300, loss: 1.956, global_step: 40629
+2020-07-03 17:00:58,275:INFO: 2020-07-03 16:30:21 epoch 2, step 15600, loss: 0.1159, global_step: 40929
+2020-07-03 17:00:58,275:INFO: 2020-07-03 16:30:21 epoch 2, step 15600, loss: 0.1159, global_step: 40929
+2020-07-03 17:01:32,240:INFO: 2020-07-03 16:30:21 epoch 2, step 15900, loss: 0.0122, global_step: 41229
+2020-07-03 17:01:32,240:INFO: 2020-07-03 16:30:21 epoch 2, step 15900, loss: 0.0122, global_step: 41229
+2020-07-03 17:02:07,411:INFO: 2020-07-03 16:30:21 epoch 2, step 16200, loss: 0.3538, global_step: 41529
+2020-07-03 17:02:07,411:INFO: 2020-07-03 16:30:21 epoch 2, step 16200, loss: 0.3538, global_step: 41529
+2020-07-03 17:02:41,735:INFO: 2020-07-03 16:30:21 epoch 2, step 16500, loss: 2.998, global_step: 41829
+2020-07-03 17:02:41,735:INFO: 2020-07-03 16:30:21 epoch 2, step 16500, loss: 2.998, global_step: 41829
+2020-07-03 17:03:16,727:INFO: 2020-07-03 16:30:21 epoch 2, step 16800, loss: 0.11, global_step: 42129
+2020-07-03 17:03:16,727:INFO: 2020-07-03 16:30:21 epoch 2, step 16800, loss: 0.11, global_step: 42129
+2020-07-03 17:03:50,003:INFO: 2020-07-03 16:30:21 epoch 2, step 17100, loss: 0.02724, global_step: 42429
+2020-07-03 17:03:50,003:INFO: 2020-07-03 16:30:21 epoch 2, step 17100, loss: 0.02724, global_step: 42429
+2020-07-03 17:04:23,417:INFO: 2020-07-03 16:30:21 epoch 2, step 17400, loss: 3.121, global_step: 42729
+2020-07-03 17:04:23,417:INFO: 2020-07-03 16:30:21 epoch 2, step 17400, loss: 3.121, global_step: 42729
+2020-07-03 17:05:00,648:INFO: 2020-07-03 16:30:21 epoch 2, step 17700, loss: 4.064, global_step: 43029
+2020-07-03 17:05:00,648:INFO: 2020-07-03 16:30:21 epoch 2, step 17700, loss: 4.064, global_step: 43029
+2020-07-03 17:05:41,227:INFO: 2020-07-03 16:30:21 epoch 2, step 18000, loss: 0.02345, global_step: 43329
+2020-07-03 17:05:41,227:INFO: 2020-07-03 16:30:21 epoch 2, step 18000, loss: 0.02345, global_step: 43329
+2020-07-03 17:06:18,526:INFO: 2020-07-03 16:30:21 epoch 2, step 18300, loss: 0.4355, global_step: 43629
+2020-07-03 17:06:18,526:INFO: 2020-07-03 16:30:21 epoch 2, step 18300, loss: 0.4355, global_step: 43629
+2020-07-03 17:06:58,073:INFO: 2020-07-03 16:30:21 epoch 2, step 18600, loss: 0.3792, global_step: 43929
+2020-07-03 17:06:58,073:INFO: 2020-07-03 16:30:21 epoch 2, step 18600, loss: 0.3792, global_step: 43929
+2020-07-03 17:07:33,187:INFO: 2020-07-03 16:30:21 epoch 2, step 18900, loss: 1.233, global_step: 44229
+2020-07-03 17:07:33,187:INFO: 2020-07-03 16:30:21 epoch 2, step 18900, loss: 1.233, global_step: 44229
+2020-07-03 17:08:19,678:INFO: 2020-07-03 16:30:21 epoch 2, step 19200, loss: 1.917, global_step: 44529
+2020-07-03 17:08:19,678:INFO: 2020-07-03 16:30:21 epoch 2, step 19200, loss: 1.917, global_step: 44529
+2020-07-03 17:09:13,725:INFO: 2020-07-03 16:30:21 epoch 2, step 19500, loss: 0.0843, global_step: 44829
+2020-07-03 17:09:13,725:INFO: 2020-07-03 16:30:21 epoch 2, step 19500, loss: 0.0843, global_step: 44829
+2020-07-03 17:09:56,832:INFO: 2020-07-03 16:30:21 epoch 2, step 19800, loss: 0.579, global_step: 45129
+2020-07-03 17:09:56,832:INFO: 2020-07-03 16:30:21 epoch 2, step 19800, loss: 0.579, global_step: 45129
+2020-07-03 17:10:46,232:INFO: 2020-07-03 16:30:21 epoch 2, step 20100, loss: 0.1804, global_step: 45429
+2020-07-03 17:10:46,232:INFO: 2020-07-03 16:30:21 epoch 2, step 20100, loss: 0.1804, global_step: 45429
+2020-07-03 17:11:42,612:INFO: 2020-07-03 16:30:21 epoch 2, step 20400, loss: 0.227, global_step: 45729
+2020-07-03 17:11:42,612:INFO: 2020-07-03 16:30:21 epoch 2, step 20400, loss: 0.227, global_step: 45729
+2020-07-03 17:12:33,017:INFO: 2020-07-03 16:30:21 epoch 2, step 20700, loss: 1.622, global_step: 46029
+2020-07-03 17:12:33,017:INFO: 2020-07-03 16:30:21 epoch 2, step 20700, loss: 1.622, global_step: 46029
+2020-07-03 17:13:25,298:INFO: 2020-07-03 16:30:21 epoch 2, step 21000, loss: 3.238, global_step: 46329
+2020-07-03 17:13:25,298:INFO: 2020-07-03 16:30:21 epoch 2, step 21000, loss: 3.238, global_step: 46329
+2020-07-03 17:14:15,260:INFO: 2020-07-03 16:30:21 epoch 2, step 21300, loss: 0.3934, global_step: 46629
+2020-07-03 17:14:15,260:INFO: 2020-07-03 16:30:21 epoch 2, step 21300, loss: 0.3934, global_step: 46629
+2020-07-03 17:15:03,870:INFO: 2020-07-03 16:30:21 epoch 2, step 21600, loss: 0.8342, global_step: 46929
+2020-07-03 17:15:03,870:INFO: 2020-07-03 16:30:21 epoch 2, step 21600, loss: 0.8342, global_step: 46929
+2020-07-03 17:15:50,924:INFO: 2020-07-03 16:30:21 epoch 2, step 21900, loss: 1.608, global_step: 47229
+2020-07-03 17:15:50,924:INFO: 2020-07-03 16:30:21 epoch 2, step 21900, loss: 1.608, global_step: 47229
+2020-07-03 17:16:46,386:INFO: 2020-07-03 16:30:21 epoch 2, step 22200, loss: 0.2449, global_step: 47529
+2020-07-03 17:16:46,386:INFO: 2020-07-03 16:30:21 epoch 2, step 22200, loss: 0.2449, global_step: 47529
+2020-07-03 17:17:45,182:INFO: 2020-07-03 16:30:21 epoch 2, step 22500, loss: 0.6169, global_step: 47829
+2020-07-03 17:17:45,182:INFO: 2020-07-03 16:30:21 epoch 2, step 22500, loss: 0.6169, global_step: 47829
+2020-07-03 17:18:32,715:INFO: 2020-07-03 16:30:21 epoch 2, step 22800, loss: 0.2053, global_step: 48129
+2020-07-03 17:18:32,715:INFO: 2020-07-03 16:30:21 epoch 2, step 22800, loss: 0.2053, global_step: 48129
+2020-07-03 17:19:14,174:INFO: 2020-07-03 16:30:21 epoch 2, step 23100, loss: 2.255, global_step: 48429
+2020-07-03 17:19:14,174:INFO: 2020-07-03 16:30:21 epoch 2, step 23100, loss: 2.255, global_step: 48429
+2020-07-03 17:20:12,562:INFO: 2020-07-03 16:30:21 epoch 2, step 23400, loss: 0.06554, global_step: 48729
+2020-07-03 17:20:12,562:INFO: 2020-07-03 16:30:21 epoch 2, step 23400, loss: 0.06554, global_step: 48729
+2020-07-03 17:21:13,215:INFO: 2020-07-03 16:30:21 epoch 2, step 23700, loss: 2.44, global_step: 49029
+2020-07-03 17:21:13,215:INFO: 2020-07-03 16:30:21 epoch 2, step 23700, loss: 2.44, global_step: 49029
+2020-07-03 17:21:56,765:INFO: 2020-07-03 16:30:21 epoch 2, step 24000, loss: 0.01016, global_step: 49329
+2020-07-03 17:21:56,765:INFO: 2020-07-03 16:30:21 epoch 2, step 24000, loss: 0.01016, global_step: 49329
+2020-07-03 17:22:46,934:INFO: 2020-07-03 16:30:21 epoch 2, step 24300, loss: 0.96, global_step: 49629
+2020-07-03 17:22:46,934:INFO: 2020-07-03 16:30:21 epoch 2, step 24300, loss: 0.96, global_step: 49629
+2020-07-03 17:23:31,889:INFO: 2020-07-03 16:30:21 epoch 2, step 24600, loss: 3.77, global_step: 49929
+2020-07-03 17:23:31,889:INFO: 2020-07-03 16:30:21 epoch 2, step 24600, loss: 3.77, global_step: 49929
+2020-07-03 17:24:39,900:INFO: 2020-07-03 16:30:21 epoch 2, step 24900, loss: 0.146, global_step: 50229
+2020-07-03 17:24:39,900:INFO: 2020-07-03 16:30:21 epoch 2, step 24900, loss: 0.146, global_step: 50229
+2020-07-03 17:25:35,015:INFO: 2020-07-03 16:30:21 epoch 2, step 25200, loss: 0.1664, global_step: 50529
+2020-07-03 17:25:35,015:INFO: 2020-07-03 16:30:21 epoch 2, step 25200, loss: 0.1664, global_step: 50529
+2020-07-03 17:25:59,739:INFO: 2020-07-03 16:30:21 epoch 2, step 25329, loss: 0.0131, global_step: 50658
+2020-07-03 17:25:59,739:INFO: 2020-07-03 16:30:21 epoch 2, step 25329, loss: 0.0131, global_step: 50658
+2020-07-03 17:26:00,706:INFO: ===========validation / test===========
+2020-07-03 17:26:00,706:INFO: ===========validation / test===========
+2020-07-03 17:27:02,288:INFO: processed 177232 tokens with 6192 phrases; found: 5785 phrases; correct: 5070.
+2020-07-03 17:27:02,288:INFO: processed 177232 tokens with 6192 phrases; found: 5785 phrases; correct: 5070.
+2020-07-03 17:27:02,289:INFO: accuracy:  98.07%; precision:  87.64%; recall:  81.88%; FB1:  84.66
+2020-07-03 17:27:02,289:INFO: accuracy:  98.07%; precision:  87.64%; recall:  81.88%; FB1:  84.66
+2020-07-03 17:27:02,289:INFO: LOC: precision:  90.55%; recall:  87.24%; FB1:  88.87  2772
+2020-07-03 17:27:02,289:INFO: LOC: precision:  90.55%; recall:  87.24%; FB1:  88.87  2772
+2020-07-03 17:27:02,289:INFO: ORG: precision:  81.45%; recall:  75.21%; FB1:  78.20  1229
+2020-07-03 17:27:02,289:INFO: ORG: precision:  81.45%; recall:  75.21%; FB1:  78.20  1229
+2020-07-03 17:27:02,289:INFO: PER: precision:  87.39%; recall:  78.58%; FB1:  82.75  1784
+2020-07-03 17:27:02,289:INFO: PER: precision:  87.39%; recall:  78.58%; FB1:  82.75  1784
+2020-07-03 17:27:02,481:INFO: 2020-07-03 17:27:02 epoch 3, step 1, loss: 0.2984, global_step: 50659
+2020-07-03 17:27:02,481:INFO: 2020-07-03 17:27:02 epoch 3, step 1, loss: 0.2984, global_step: 50659
+2020-07-03 17:27:41,935:INFO: 2020-07-03 17:27:02 epoch 3, step 300, loss: 0.2454, global_step: 50958
+2020-07-03 17:27:41,935:INFO: 2020-07-03 17:27:02 epoch 3, step 300, loss: 0.2454, global_step: 50958
+2020-07-03 17:28:44,027:INFO: 2020-07-03 17:27:02 epoch 3, step 600, loss: 0.2749, global_step: 51258
+2020-07-03 17:28:44,027:INFO: 2020-07-03 17:27:02 epoch 3, step 600, loss: 0.2749, global_step: 51258
+2020-07-03 17:29:32,075:INFO: 2020-07-03 17:27:02 epoch 3, step 900, loss: 0.05809, global_step: 51558
+2020-07-03 17:29:32,075:INFO: 2020-07-03 17:27:02 epoch 3, step 900, loss: 0.05809, global_step: 51558
+2020-07-03 17:30:24,738:INFO: 2020-07-03 17:27:02 epoch 3, step 1200, loss: 0.02782, global_step: 51858
+2020-07-03 17:30:24,738:INFO: 2020-07-03 17:27:02 epoch 3, step 1200, loss: 0.02782, global_step: 51858
+2020-07-03 17:31:11,370:INFO: 2020-07-03 17:27:02 epoch 3, step 1500, loss: 0.4964, global_step: 52158
+2020-07-03 17:31:11,370:INFO: 2020-07-03 17:27:02 epoch 3, step 1500, loss: 0.4964, global_step: 52158
+2020-07-03 17:31:56,254:INFO: 2020-07-03 17:27:02 epoch 3, step 1800, loss: 0.01664, global_step: 52458
+2020-07-03 17:31:56,254:INFO: 2020-07-03 17:27:02 epoch 3, step 1800, loss: 0.01664, global_step: 52458
+2020-07-03 17:32:36,989:INFO: 2020-07-03 17:27:02 epoch 3, step 2100, loss: 0.01264, global_step: 52758
+2020-07-03 17:32:36,989:INFO: 2020-07-03 17:27:02 epoch 3, step 2100, loss: 0.01264, global_step: 52758
+2020-07-03 17:33:21,353:INFO: 2020-07-03 17:27:02 epoch 3, step 2400, loss: 0.00108, global_step: 53058
+2020-07-03 17:33:21,353:INFO: 2020-07-03 17:27:02 epoch 3, step 2400, loss: 0.00108, global_step: 53058
+2020-07-03 17:34:12,159:INFO: 2020-07-03 17:27:02 epoch 3, step 2700, loss: 0.6656, global_step: 53358
+2020-07-03 17:34:12,159:INFO: 2020-07-03 17:27:02 epoch 3, step 2700, loss: 0.6656, global_step: 53358
+2020-07-03 17:34:57,479:INFO: 2020-07-03 17:27:02 epoch 3, step 3000, loss: 0.442, global_step: 53658
+2020-07-03 17:34:57,479:INFO: 2020-07-03 17:27:02 epoch 3, step 3000, loss: 0.442, global_step: 53658
+2020-07-03 17:35:50,729:INFO: 2020-07-03 17:27:02 epoch 3, step 3300, loss: 3.462, global_step: 53958
+2020-07-03 17:35:50,729:INFO: 2020-07-03 17:27:02 epoch 3, step 3300, loss: 3.462, global_step: 53958
+2020-07-03 17:36:35,812:INFO: 2020-07-03 17:27:02 epoch 3, step 3600, loss: 0.9931, global_step: 54258
+2020-07-03 17:36:35,812:INFO: 2020-07-03 17:27:02 epoch 3, step 3600, loss: 0.9931, global_step: 54258
+2020-07-03 17:37:30,123:INFO: 2020-07-03 17:27:02 epoch 3, step 3900, loss: 0.1974, global_step: 54558
+2020-07-03 17:37:30,123:INFO: 2020-07-03 17:27:02 epoch 3, step 3900, loss: 0.1974, global_step: 54558
+2020-07-03 17:38:12,101:INFO: 2020-07-03 17:27:02 epoch 3, step 4200, loss: 0.04474, global_step: 54858
+2020-07-03 17:38:12,101:INFO: 2020-07-03 17:27:02 epoch 3, step 4200, loss: 0.04474, global_step: 54858
+2020-07-03 17:38:59,542:INFO: 2020-07-03 17:27:02 epoch 3, step 4500, loss: 0.01196, global_step: 55158
+2020-07-03 17:38:59,542:INFO: 2020-07-03 17:27:02 epoch 3, step 4500, loss: 0.01196, global_step: 55158
+2020-07-03 17:39:58,698:INFO: 2020-07-03 17:27:02 epoch 3, step 4800, loss: 3.038, global_step: 55458
+2020-07-03 17:39:58,698:INFO: 2020-07-03 17:27:02 epoch 3, step 4800, loss: 3.038, global_step: 55458
+2020-07-03 17:40:49,094:INFO: 2020-07-03 17:27:02 epoch 3, step 5100, loss: 2.711, global_step: 55758
+2020-07-03 17:40:49,094:INFO: 2020-07-03 17:27:02 epoch 3, step 5100, loss: 2.711, global_step: 55758
+2020-07-03 17:41:43,747:INFO: 2020-07-03 17:27:02 epoch 3, step 5400, loss: 0.02418, global_step: 56058
+2020-07-03 17:41:43,747:INFO: 2020-07-03 17:27:02 epoch 3, step 5400, loss: 0.02418, global_step: 56058
+2020-07-03 17:42:41,103:INFO: 2020-07-03 17:27:02 epoch 3, step 5700, loss: 3.464, global_step: 56358
+2020-07-03 17:42:41,103:INFO: 2020-07-03 17:27:02 epoch 3, step 5700, loss: 3.464, global_step: 56358
+2020-07-03 17:43:30,943:INFO: 2020-07-03 17:27:02 epoch 3, step 6000, loss: 1.719, global_step: 56658
+2020-07-03 17:43:30,943:INFO: 2020-07-03 17:27:02 epoch 3, step 6000, loss: 1.719, global_step: 56658
+2020-07-03 17:44:32,191:INFO: 2020-07-03 17:27:02 epoch 3, step 6300, loss: 0.03462, global_step: 56958
+2020-07-03 17:44:32,191:INFO: 2020-07-03 17:27:02 epoch 3, step 6300, loss: 0.03462, global_step: 56958
+2020-07-03 17:45:20,771:INFO: 2020-07-03 17:27:02 epoch 3, step 6600, loss: 0.2655, global_step: 57258
+2020-07-03 17:45:20,771:INFO: 2020-07-03 17:27:02 epoch 3, step 6600, loss: 0.2655, global_step: 57258
+2020-07-03 17:46:04,069:INFO: 2020-07-03 17:27:02 epoch 3, step 6900, loss: 0.1412, global_step: 57558
+2020-07-03 17:46:04,069:INFO: 2020-07-03 17:27:02 epoch 3, step 6900, loss: 0.1412, global_step: 57558
+2020-07-03 17:46:44,693:INFO: 2020-07-03 17:27:02 epoch 3, step 7200, loss: 0.9436, global_step: 57858
+2020-07-03 17:46:44,693:INFO: 2020-07-03 17:27:02 epoch 3, step 7200, loss: 0.9436, global_step: 57858
+2020-07-03 17:47:30,390:INFO: 2020-07-03 17:27:02 epoch 3, step 7500, loss: 3.464, global_step: 58158
+2020-07-03 17:47:30,390:INFO: 2020-07-03 17:27:02 epoch 3, step 7500, loss: 3.464, global_step: 58158
+2020-07-03 17:48:14,753:INFO: 2020-07-03 17:27:02 epoch 3, step 7800, loss: 0.04258, global_step: 58458
+2020-07-03 17:48:14,753:INFO: 2020-07-03 17:27:02 epoch 3, step 7800, loss: 0.04258, global_step: 58458
+2020-07-03 17:48:57,695:INFO: 2020-07-03 17:27:02 epoch 3, step 8100, loss: 0.2912, global_step: 58758
+2020-07-03 17:48:57,695:INFO: 2020-07-03 17:27:02 epoch 3, step 8100, loss: 0.2912, global_step: 58758
+2020-07-03 17:49:40,576:INFO: 2020-07-03 17:27:02 epoch 3, step 8400, loss: 0.5058, global_step: 59058
+2020-07-03 17:49:40,576:INFO: 2020-07-03 17:27:02 epoch 3, step 8400, loss: 0.5058, global_step: 59058
+2020-07-03 17:50:32,953:INFO: 2020-07-03 17:27:02 epoch 3, step 8700, loss: 0.08443, global_step: 59358
+2020-07-03 17:50:32,953:INFO: 2020-07-03 17:27:02 epoch 3, step 8700, loss: 0.08443, global_step: 59358
+2020-07-03 17:51:28,593:INFO: 2020-07-03 17:27:02 epoch 3, step 9000, loss: 1.485, global_step: 59658
+2020-07-03 17:51:28,593:INFO: 2020-07-03 17:27:02 epoch 3, step 9000, loss: 1.485, global_step: 59658
+2020-07-03 17:52:19,244:INFO: 2020-07-03 17:27:02 epoch 3, step 9300, loss: 0.4531, global_step: 59958
+2020-07-03 17:52:19,244:INFO: 2020-07-03 17:27:02 epoch 3, step 9300, loss: 0.4531, global_step: 59958
+2020-07-03 17:53:10,177:INFO: 2020-07-03 17:27:02 epoch 3, step 9600, loss: 0.8588, global_step: 60258
+2020-07-03 17:53:10,177:INFO: 2020-07-03 17:27:02 epoch 3, step 9600, loss: 0.8588, global_step: 60258
+2020-07-03 17:54:01,975:INFO: 2020-07-03 17:27:02 epoch 3, step 9900, loss: 2.904, global_step: 60558
+2020-07-03 17:54:01,975:INFO: 2020-07-03 17:27:02 epoch 3, step 9900, loss: 2.904, global_step: 60558
+2020-07-03 17:54:54,514:INFO: 2020-07-03 17:27:02 epoch 3, step 10200, loss: 0.06779, global_step: 60858
+2020-07-03 17:54:54,514:INFO: 2020-07-03 17:27:02 epoch 3, step 10200, loss: 0.06779, global_step: 60858
+2020-07-03 17:55:47,455:INFO: 2020-07-03 17:27:02 epoch 3, step 10500, loss: 0.003342, global_step: 61158
+2020-07-03 17:55:47,455:INFO: 2020-07-03 17:27:02 epoch 3, step 10500, loss: 0.003342, global_step: 61158
+2020-07-03 17:56:37,530:INFO: 2020-07-03 17:27:02 epoch 3, step 10800, loss: 3.774, global_step: 61458
+2020-07-03 17:56:37,530:INFO: 2020-07-03 17:27:02 epoch 3, step 10800, loss: 3.774, global_step: 61458
+2020-07-03 17:57:30,086:INFO: 2020-07-03 17:27:02 epoch 3, step 11100, loss: 1.884, global_step: 61758
+2020-07-03 17:57:30,086:INFO: 2020-07-03 17:27:02 epoch 3, step 11100, loss: 1.884, global_step: 61758
+2020-07-03 17:58:25,418:INFO: 2020-07-03 17:27:02 epoch 3, step 11400, loss: 0.4305, global_step: 62058
+2020-07-03 17:58:25,418:INFO: 2020-07-03 17:27:02 epoch 3, step 11400, loss: 0.4305, global_step: 62058
+2020-07-03 17:59:19,634:INFO: 2020-07-03 17:27:02 epoch 3, step 11700, loss: 0.02324, global_step: 62358
+2020-07-03 17:59:19,634:INFO: 2020-07-03 17:27:02 epoch 3, step 11700, loss: 0.02324, global_step: 62358
+2020-07-03 18:00:07,832:INFO: 2020-07-03 17:27:02 epoch 3, step 12000, loss: 0.5428, global_step: 62658
+2020-07-03 18:00:07,832:INFO: 2020-07-03 17:27:02 epoch 3, step 12000, loss: 0.5428, global_step: 62658
+2020-07-03 18:01:06,001:INFO: 2020-07-03 17:27:02 epoch 3, step 12300, loss: 0.0357, global_step: 62958
+2020-07-03 18:01:06,001:INFO: 2020-07-03 17:27:02 epoch 3, step 12300, loss: 0.0357, global_step: 62958
+2020-07-03 18:01:51,349:INFO: 2020-07-03 17:27:02 epoch 3, step 12600, loss: 4.028, global_step: 63258
+2020-07-03 18:01:51,349:INFO: 2020-07-03 17:27:02 epoch 3, step 12600, loss: 4.028, global_step: 63258
+2020-07-03 18:02:46,018:INFO: 2020-07-03 17:27:02 epoch 3, step 12900, loss: 0.2031, global_step: 63558
+2020-07-03 18:02:46,018:INFO: 2020-07-03 17:27:02 epoch 3, step 12900, loss: 0.2031, global_step: 63558
+2020-07-03 18:03:36,395:INFO: 2020-07-03 17:27:02 epoch 3, step 13200, loss: 1.193, global_step: 63858
+2020-07-03 18:03:36,395:INFO: 2020-07-03 17:27:02 epoch 3, step 13200, loss: 1.193, global_step: 63858
+2020-07-03 18:04:30,619:INFO: 2020-07-03 17:27:02 epoch 3, step 13500, loss: 0.04377, global_step: 64158
+2020-07-03 18:04:30,619:INFO: 2020-07-03 17:27:02 epoch 3, step 13500, loss: 0.04377, global_step: 64158
+2020-07-03 18:05:15,023:INFO: 2020-07-03 17:27:02 epoch 3, step 13800, loss: 3.344, global_step: 64458
+2020-07-03 18:05:15,023:INFO: 2020-07-03 17:27:02 epoch 3, step 13800, loss: 3.344, global_step: 64458
+2020-07-03 18:06:17,791:INFO: 2020-07-03 17:27:02 epoch 3, step 14100, loss: 0.02973, global_step: 64758
+2020-07-03 18:06:17,791:INFO: 2020-07-03 17:27:02 epoch 3, step 14100, loss: 0.02973, global_step: 64758
+2020-07-03 18:07:17,680:INFO: 2020-07-03 17:27:02 epoch 3, step 14400, loss: 0.002026, global_step: 65058
+2020-07-03 18:07:17,680:INFO: 2020-07-03 17:27:02 epoch 3, step 14400, loss: 0.002026, global_step: 65058
+2020-07-03 18:08:17,533:INFO: 2020-07-03 17:27:02 epoch 3, step 14700, loss: 0.317, global_step: 65358
+2020-07-03 18:08:17,533:INFO: 2020-07-03 17:27:02 epoch 3, step 14700, loss: 0.317, global_step: 65358
+2020-07-03 18:09:02,561:INFO: 2020-07-03 17:27:02 epoch 3, step 15000, loss: 1.015, global_step: 65658
+2020-07-03 18:09:02,561:INFO: 2020-07-03 17:27:02 epoch 3, step 15000, loss: 1.015, global_step: 65658
+2020-07-03 18:09:54,934:INFO: 2020-07-03 17:27:02 epoch 3, step 15300, loss: 0.02386, global_step: 65958
+2020-07-03 18:09:54,934:INFO: 2020-07-03 17:27:02 epoch 3, step 15300, loss: 0.02386, global_step: 65958
+2020-07-03 18:10:38,765:INFO: 2020-07-03 17:27:02 epoch 3, step 15600, loss: 0.001343, global_step: 66258
+2020-07-03 18:10:38,765:INFO: 2020-07-03 17:27:02 epoch 3, step 15600, loss: 0.001343, global_step: 66258
+2020-07-03 18:11:32,903:INFO: 2020-07-03 17:27:02 epoch 3, step 15900, loss: 8.592, global_step: 66558
+2020-07-03 18:11:32,903:INFO: 2020-07-03 17:27:02 epoch 3, step 15900, loss: 8.592, global_step: 66558
+2020-07-03 18:12:19,701:INFO: 2020-07-03 17:27:02 epoch 3, step 16200, loss: 1.351, global_step: 66858
+2020-07-03 18:12:19,701:INFO: 2020-07-03 17:27:02 epoch 3, step 16200, loss: 1.351, global_step: 66858
+2020-07-03 18:13:05,003:INFO: 2020-07-03 17:27:02 epoch 3, step 16500, loss: 0.4231, global_step: 67158
+2020-07-03 18:13:05,003:INFO: 2020-07-03 17:27:02 epoch 3, step 16500, loss: 0.4231, global_step: 67158
+2020-07-03 18:14:08,803:INFO: 2020-07-03 17:27:02 epoch 3, step 16800, loss: 13.68, global_step: 67458
+2020-07-03 18:14:08,803:INFO: 2020-07-03 17:27:02 epoch 3, step 16800, loss: 13.68, global_step: 67458
+2020-07-03 18:15:01,031:INFO: 2020-07-03 17:27:02 epoch 3, step 17100, loss: 0.01045, global_step: 67758
+2020-07-03 18:15:01,031:INFO: 2020-07-03 17:27:02 epoch 3, step 17100, loss: 0.01045, global_step: 67758
+2020-07-03 18:15:59,871:INFO: 2020-07-03 17:27:02 epoch 3, step 17400, loss: 0.1689, global_step: 68058
+2020-07-03 18:15:59,871:INFO: 2020-07-03 17:27:02 epoch 3, step 17400, loss: 0.1689, global_step: 68058
+2020-07-03 18:16:59,900:INFO: 2020-07-03 17:27:02 epoch 3, step 17700, loss: 4.474, global_step: 68358
+2020-07-03 18:16:59,900:INFO: 2020-07-03 17:27:02 epoch 3, step 17700, loss: 4.474, global_step: 68358
+2020-07-03 18:17:41,800:INFO: 2020-07-03 17:27:02 epoch 3, step 18000, loss: 0.01663, global_step: 68658
+2020-07-03 18:17:41,800:INFO: 2020-07-03 17:27:02 epoch 3, step 18000, loss: 0.01663, global_step: 68658
+2020-07-03 18:18:36,953:INFO: 2020-07-03 17:27:02 epoch 3, step 18300, loss: 1.896, global_step: 68958
+2020-07-03 18:18:36,953:INFO: 2020-07-03 17:27:02 epoch 3, step 18300, loss: 1.896, global_step: 68958
+2020-07-03 18:19:33,816:INFO: 2020-07-03 17:27:02 epoch 3, step 18600, loss: 0.393, global_step: 69258
+2020-07-03 18:19:33,816:INFO: 2020-07-03 17:27:02 epoch 3, step 18600, loss: 0.393, global_step: 69258
+2020-07-03 18:20:30,902:INFO: 2020-07-03 17:27:02 epoch 3, step 18900, loss: 0.02031, global_step: 69558
+2020-07-03 18:20:30,902:INFO: 2020-07-03 17:27:02 epoch 3, step 18900, loss: 0.02031, global_step: 69558
+2020-07-03 18:21:30,276:INFO: 2020-07-03 17:27:02 epoch 3, step 19200, loss: 0.01093, global_step: 69858
+2020-07-03 18:21:30,276:INFO: 2020-07-03 17:27:02 epoch 3, step 19200, loss: 0.01093, global_step: 69858
+2020-07-03 18:22:17,503:INFO: 2020-07-03 17:27:02 epoch 3, step 19500, loss: 0.08113, global_step: 70158
+2020-07-03 18:22:17,503:INFO: 2020-07-03 17:27:02 epoch 3, step 19500, loss: 0.08113, global_step: 70158
+2020-07-03 18:23:06,162:INFO: 2020-07-03 17:27:02 epoch 3, step 19800, loss: 2.952, global_step: 70458
+2020-07-03 18:23:06,162:INFO: 2020-07-03 17:27:02 epoch 3, step 19800, loss: 2.952, global_step: 70458
+2020-07-03 18:23:55,077:INFO: 2020-07-03 17:27:02 epoch 3, step 20100, loss: 0.4845, global_step: 70758
+2020-07-03 18:23:55,077:INFO: 2020-07-03 17:27:02 epoch 3, step 20100, loss: 0.4845, global_step: 70758
+2020-07-03 18:24:34,271:INFO: 2020-07-03 17:27:02 epoch 3, step 20400, loss: 0.6398, global_step: 71058
+2020-07-03 18:24:34,271:INFO: 2020-07-03 17:27:02 epoch 3, step 20400, loss: 0.6398, global_step: 71058
+2020-07-03 18:25:11,474:INFO: 2020-07-03 17:27:02 epoch 3, step 20700, loss: 0.00771, global_step: 71358
+2020-07-03 18:25:11,474:INFO: 2020-07-03 17:27:02 epoch 3, step 20700, loss: 0.00771, global_step: 71358
+2020-07-03 18:25:48,619:INFO: 2020-07-03 17:27:02 epoch 3, step 21000, loss: 0.8718, global_step: 71658
+2020-07-03 18:25:48,619:INFO: 2020-07-03 17:27:02 epoch 3, step 21000, loss: 0.8718, global_step: 71658
+2020-07-03 18:26:25,491:INFO: 2020-07-03 17:27:02 epoch 3, step 21300, loss: 0.0019, global_step: 71958
+2020-07-03 18:26:25,491:INFO: 2020-07-03 17:27:02 epoch 3, step 21300, loss: 0.0019, global_step: 71958
+2020-07-03 18:27:12,315:INFO: 2020-07-03 17:27:02 epoch 3, step 21600, loss: 0.1008, global_step: 72258
+2020-07-03 18:27:12,315:INFO: 2020-07-03 17:27:02 epoch 3, step 21600, loss: 0.1008, global_step: 72258
+2020-07-03 18:27:57,696:INFO: 2020-07-03 17:27:02 epoch 3, step 21900, loss: 0.3862, global_step: 72558
+2020-07-03 18:27:57,696:INFO: 2020-07-03 17:27:02 epoch 3, step 21900, loss: 0.3862, global_step: 72558
+2020-07-03 18:28:40,848:INFO: 2020-07-03 17:27:02 epoch 3, step 22200, loss: 0.2598, global_step: 72858
+2020-07-03 18:28:40,848:INFO: 2020-07-03 17:27:02 epoch 3, step 22200, loss: 0.2598, global_step: 72858
+2020-07-03 18:29:23,349:INFO: 2020-07-03 17:27:02 epoch 3, step 22500, loss: 0.1787, global_step: 73158
+2020-07-03 18:29:23,349:INFO: 2020-07-03 17:27:02 epoch 3, step 22500, loss: 0.1787, global_step: 73158
+2020-07-03 18:30:03,307:INFO: 2020-07-03 17:27:02 epoch 3, step 22800, loss: 0.005131, global_step: 73458
+2020-07-03 18:30:03,307:INFO: 2020-07-03 17:27:02 epoch 3, step 22800, loss: 0.005131, global_step: 73458
+2020-07-03 18:30:37,888:INFO: 2020-07-03 17:27:02 epoch 3, step 23100, loss: 0.1505, global_step: 73758
+2020-07-03 18:30:37,888:INFO: 2020-07-03 17:27:02 epoch 3, step 23100, loss: 0.1505, global_step: 73758
+2020-07-03 18:31:12,401:INFO: 2020-07-03 17:27:02 epoch 3, step 23400, loss: 0.06659, global_step: 74058
+2020-07-03 18:31:12,401:INFO: 2020-07-03 17:27:02 epoch 3, step 23400, loss: 0.06659, global_step: 74058
+2020-07-03 18:31:47,362:INFO: 2020-07-03 17:27:02 epoch 3, step 23700, loss: 0.1031, global_step: 74358
+2020-07-03 18:31:47,362:INFO: 2020-07-03 17:27:02 epoch 3, step 23700, loss: 0.1031, global_step: 74358
+2020-07-03 18:32:26,457:INFO: 2020-07-03 17:27:02 epoch 3, step 24000, loss: 1.676, global_step: 74658
+2020-07-03 18:32:26,457:INFO: 2020-07-03 17:27:02 epoch 3, step 24000, loss: 1.676, global_step: 74658
+2020-07-03 18:33:06,407:INFO: 2020-07-03 17:27:02 epoch 3, step 24300, loss: 0.01369, global_step: 74958
+2020-07-03 18:33:06,407:INFO: 2020-07-03 17:27:02 epoch 3, step 24300, loss: 0.01369, global_step: 74958
+2020-07-03 18:33:43,979:INFO: 2020-07-03 17:27:02 epoch 3, step 24600, loss: 0.1217, global_step: 75258
+2020-07-03 18:33:43,979:INFO: 2020-07-03 17:27:02 epoch 3, step 24600, loss: 0.1217, global_step: 75258
+2020-07-03 18:34:18,563:INFO: 2020-07-03 17:27:02 epoch 3, step 24900, loss: 0.01684, global_step: 75558
+2020-07-03 18:34:18,563:INFO: 2020-07-03 17:27:02 epoch 3, step 24900, loss: 0.01684, global_step: 75558
+2020-07-03 18:34:56,523:INFO: 2020-07-03 17:27:02 epoch 3, step 25200, loss: 11.83, global_step: 75858
+2020-07-03 18:34:56,523:INFO: 2020-07-03 17:27:02 epoch 3, step 25200, loss: 11.83, global_step: 75858
+2020-07-03 18:35:12,851:INFO: 2020-07-03 17:27:02 epoch 3, step 25329, loss: 0.2118, global_step: 75987
+2020-07-03 18:35:12,851:INFO: 2020-07-03 17:27:02 epoch 3, step 25329, loss: 0.2118, global_step: 75987
+2020-07-03 18:35:13,595:INFO: ===========validation / test===========
+2020-07-03 18:35:13,595:INFO: ===========validation / test===========
+2020-07-03 18:35:51,972:INFO: processed 177232 tokens with 6192 phrases; found: 5778 phrases; correct: 5080.
+2020-07-03 18:35:51,972:INFO: processed 177232 tokens with 6192 phrases; found: 5778 phrases; correct: 5080.
+2020-07-03 18:35:51,973:INFO: accuracy:  98.01%; precision:  87.92%; recall:  82.04%; FB1:  84.88
+2020-07-03 18:35:51,973:INFO: accuracy:  98.01%; precision:  87.92%; recall:  82.04%; FB1:  84.88
+2020-07-03 18:35:51,973:INFO: LOC: precision:  91.31%; recall:  86.20%; FB1:  88.68  2716
+2020-07-03 18:35:51,973:INFO: LOC: precision:  91.31%; recall:  86.20%; FB1:  88.68  2716
+2020-07-03 18:35:51,973:INFO: ORG: precision:  80.86%; recall:  78.74%; FB1:  79.79  1296
+2020-07-03 18:35:51,973:INFO: ORG: precision:  80.86%; recall:  78.74%; FB1:  79.79  1296
+2020-07-03 18:35:51,973:INFO: PER: precision:  87.88%; recall:  78.23%; FB1:  82.77  1766
+2020-07-03 18:35:51,973:INFO: PER: precision:  87.88%; recall:  78.23%; FB1:  82.77  1766
+2020-07-03 18:35:52,149:INFO: 2020-07-03 18:35:52 epoch 4, step 1, loss: 0.4684, global_step: 75988
+2020-07-03 18:35:52,149:INFO: 2020-07-03 18:35:52 epoch 4, step 1, loss: 0.4684, global_step: 75988
+2020-07-03 18:36:29,739:INFO: 2020-07-03 18:35:52 epoch 4, step 300, loss: 0.02933, global_step: 76287
+2020-07-03 18:36:29,739:INFO: 2020-07-03 18:35:52 epoch 4, step 300, loss: 0.02933, global_step: 76287
+2020-07-03 18:37:09,271:INFO: 2020-07-03 18:35:52 epoch 4, step 600, loss: 0.461, global_step: 76587
+2020-07-03 18:37:09,271:INFO: 2020-07-03 18:35:52 epoch 4, step 600, loss: 0.461, global_step: 76587
+2020-07-03 18:37:49,689:INFO: 2020-07-03 18:35:52 epoch 4, step 900, loss: 1.201, global_step: 76887
+2020-07-03 18:37:49,689:INFO: 2020-07-03 18:35:52 epoch 4, step 900, loss: 1.201, global_step: 76887
+2020-07-03 18:38:28,638:INFO: 2020-07-03 18:35:52 epoch 4, step 1200, loss: 0.744, global_step: 77187
+2020-07-03 18:38:28,638:INFO: 2020-07-03 18:35:52 epoch 4, step 1200, loss: 0.744, global_step: 77187
+2020-07-03 18:39:11,893:INFO: 2020-07-03 18:35:52 epoch 4, step 1500, loss: 0.106, global_step: 77487
+2020-07-03 18:39:11,893:INFO: 2020-07-03 18:35:52 epoch 4, step 1500, loss: 0.106, global_step: 77487
+2020-07-03 18:39:52,344:INFO: 2020-07-03 18:35:52 epoch 4, step 1800, loss: 0.344, global_step: 77787
+2020-07-03 18:39:52,344:INFO: 2020-07-03 18:35:52 epoch 4, step 1800, loss: 0.344, global_step: 77787
+2020-07-03 18:40:32,960:INFO: 2020-07-03 18:35:52 epoch 4, step 2100, loss: 0.07775, global_step: 78087
+2020-07-03 18:40:32,960:INFO: 2020-07-03 18:35:52 epoch 4, step 2100, loss: 0.07775, global_step: 78087
+2020-07-03 18:41:16,955:INFO: 2020-07-03 18:35:52 epoch 4, step 2400, loss: 0.4071, global_step: 78387
+2020-07-03 18:41:16,955:INFO: 2020-07-03 18:35:52 epoch 4, step 2400, loss: 0.4071, global_step: 78387
+2020-07-03 18:42:00,555:INFO: 2020-07-03 18:35:52 epoch 4, step 2700, loss: 0.8711, global_step: 78687
+2020-07-03 18:42:00,555:INFO: 2020-07-03 18:35:52 epoch 4, step 2700, loss: 0.8711, global_step: 78687
+2020-07-03 18:42:45,539:INFO: 2020-07-03 18:35:52 epoch 4, step 3000, loss: 0.0489, global_step: 78987
+2020-07-03 18:42:45,539:INFO: 2020-07-03 18:35:52 epoch 4, step 3000, loss: 0.0489, global_step: 78987
+2020-07-03 18:43:29,137:INFO: 2020-07-03 18:35:52 epoch 4, step 3300, loss: 0.003696, global_step: 79287
+2020-07-03 18:43:29,137:INFO: 2020-07-03 18:35:52 epoch 4, step 3300, loss: 0.003696, global_step: 79287
+2020-07-03 18:44:13,632:INFO: 2020-07-03 18:35:52 epoch 4, step 3600, loss: 0.594, global_step: 79587
+2020-07-03 18:44:13,632:INFO: 2020-07-03 18:35:52 epoch 4, step 3600, loss: 0.594, global_step: 79587
+2020-07-03 18:44:54,742:INFO: 2020-07-03 18:35:52 epoch 4, step 3900, loss: 0.3744, global_step: 79887
+2020-07-03 18:44:54,742:INFO: 2020-07-03 18:35:52 epoch 4, step 3900, loss: 0.3744, global_step: 79887
+2020-07-03 18:45:37,259:INFO: 2020-07-03 18:35:52 epoch 4, step 4200, loss: 0.05366, global_step: 80187
+2020-07-03 18:45:37,259:INFO: 2020-07-03 18:35:52 epoch 4, step 4200, loss: 0.05366, global_step: 80187
+2020-07-03 18:46:19,201:INFO: 2020-07-03 18:35:52 epoch 4, step 4500, loss: 0.001942, global_step: 80487
+2020-07-03 18:46:19,201:INFO: 2020-07-03 18:35:52 epoch 4, step 4500, loss: 0.001942, global_step: 80487
+2020-07-03 18:46:59,373:INFO: 2020-07-03 18:35:52 epoch 4, step 4800, loss: 0.06551, global_step: 80787
+2020-07-03 18:46:59,373:INFO: 2020-07-03 18:35:52 epoch 4, step 4800, loss: 0.06551, global_step: 80787
